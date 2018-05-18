@@ -1,0 +1,9 @@
+<!--pages/history/history.wxml-->
+<view class='root'>
+  <block wx:for="{{initiates}}" wx:for-item="initiate">
+  <view class='info'>
+      <text class='desc'>{{initiate.time}}</text>
+      <image class="avatar" src="{{initiate.sponsor.avatar}}" background-size="cover"></image>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/initiate/initiate",
+    "pages/index/index",
+    "pages/history/history"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#448aff",
+    "navigationBarTitleText": "是时候了吗",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#448aff",
+    "backgroundTextStyle": "light"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000
+  }
+}

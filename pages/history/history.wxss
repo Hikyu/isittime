@@ -1,0 +1,57 @@
+/* pages/history/history.wxss */
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  /* border-bottom: 1px inset #626970; */
+  box-shadow: 1px 0px 1px #686e74,
+                0px 1px 1px #686e74,
+                -1px 0px 1px #686e74,
+                0px -1px 1px #686e74;
+  border-radius: 8px;
+  padding: 20rpx;
+}
+
+
+.root {
+  border: 0px solid #fff;
+  /* border-radius: 10px; */
+  background-color: #fff;
+  /* box-shadow: 1px 0px 1px #686e74,
+                0px 1px 1px #686e74,
+                -1px 0px 1px #686e74,
+                0px -1px 1px #686e74;
+  margin: 10px; */
+  background: linear-gradient(to bottom, #448aff 40%, #fff 80%);
+  min-height: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.desc{
+    color: #626970;
+    font-size: 20px;
+}
+
+.avatar {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  box-shadow: 2px 0px 2px #686e74,
+                0px 2px 2px #686e74,
+                -2px 0px 2px #686e74,
+                0px -2px 2px #686e74;
+  will-change: transform;
+}
+
+.info:active {
+  opacity:0.5;
+}

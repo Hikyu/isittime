@@ -1,0 +1,35 @@
+<!--pages/home/home.wxml-->
+<view class='card'>
+  <view class='info'>
+    <text class='time'>{{initiateTime}}</text>
+    <view class='userinfo'>
+      <image class="userinfo-avatar" src="{{sponsor.avatar}}" background-size="cover"></image>
+      <text class='userinfo-nickname'>{{sponsor.name}}</text>
+    </view>
+    <text>{{slogan}}</text>
+  </view>
+  <view class='memberinfo'>
+    <block wx:for="{{members}}" wx:for-item="member">
+      <image class="memberinfo-avatar" src="{{member.avatar}}" background-size="cover"></image>
+    </block>
+  </view>
+
+  <button wx:if='{{!inGroup}}' class='btn' bindtap="join" style='color: #448aff; border-color: #448aff;' plain="true">一起吃鸡</button>
+  <block wx:else>
+    <view class='btngroup'>
+      <button class='btn' bindtap="quit" style='color: #448aff; border-color: #448aff;' plain="true">退出吃鸡</button>
+      <button class='btn' style='color: #448aff; border-color: #448aff;' plain="true" open-type="share">分享到群</button>
+    </view>
+  </block>
+
+  <view class='link'>
+    <navigator class='link-item' open-type="navigate" url="/pages/index/index">
+      <image class="widget__arrow" src="/img/link.png" background-size="cover" />
+      <text>发起吃鸡</text>
+    </navigator>
+    <navigator class='link-item' open-type="navigate" url="/pages/history/history">
+      <image class="widget__arrow" src="/img/join.png" background-size="cover" />
+      <text>我参与的</text>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+<!--pages/initiate/initiate.wxml-->
+<view class='card'>
+  <view class='info'>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <view class="section">
+      <view class="section__title">选择日期</view>
+      <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          当前选择: {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">选择时间</view>
+      <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+        <view class="picker">
+          当前选择: {{time}}
+        </view>
+      </picker>
+    </view>
+    <view class='section'>
+      <view class="section__title">要说的话</view>
+      <input class='picker' placeholder="我在工地等你" />
+    </view>
+  </view>
+  <button class='btn' bindtap="startInitiate" style='color: #448aff; border-color: #448aff;' plain="true">发起邀请</button>
+  <navigator class='link-item' open-type="navigate" url="/pages/history/history">
+    <image class="widget__arrow" src="/img/join.png" background-size="cover" />
+    <text>我参与的</text>
+  </navigator>
+</view>

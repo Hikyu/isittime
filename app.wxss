@@ -1,0 +1,62 @@
+/**app.wxss**/
+
+page {
+  height: 100%;
+}
+
+.card {
+  border: 0px solid #fff;
+  /* border-radius: 10px; */
+  background-color: #fff;
+  /* box-shadow: 1px 0px 1px #686e74,
+                0px 1px 1px #686e74,
+                -1px 0px 1px #686e74,
+                0px -1px 1px #686e74;
+  margin: 10px; */
+  background: linear-gradient(to bottom, #448aff 40%, #fff 80%);
+  min-height: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.userinfo-avatar {
+  width: 108rpx;
+  height: 108rpx;
+  margin-top: 20px;
+  border-radius: 50%;
+  box-shadow: 2px 0px 2px #686e74,
+                0px 2px 2px #686e74,
+                -2px 0px 2px #686e74,
+                0px -2px 2px #686e74;
+  will-change: transform;
+}
+
+.btn {
+  width: 40%;
+  margin: 10px;
+  align-self: center;
+}
+
+.btn:active {
+  opacity:0.5;
+}
+
+.link-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #448aff;
+  font-size: 0.6em;
+  margin: 10px;
+}
+
+
+.widget__arrow {
+  margin: 2px;
+  width: 16px;
+  height: 16px;
+}
